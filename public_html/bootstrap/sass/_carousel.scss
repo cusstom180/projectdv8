@@ -1,0 +1,73 @@
+/* Scss carousel */
+@import 'variables';
+@import "compass/css3/transform";
+
+/* Index carousel */
+
+
+#carousel1 {
+	
+	.carousel-inner {
+
+		.item {
+			
+			 @include transform-style(preserve-3d);
+
+			img {
+
+				background-position: bottom;
+			}
+		}
+	}
+	
+	.carousel-caption {
+		
+		top: 50%;
+		transform: translateY(-50%);
+		bottom: initial;
+		
+		h1 {
+			
+			width: 40%;
+			font-family: $font-car-h1;
+			color: $black;
+			margin: auto;
+			margin-top: 40px;
+		}
+		
+	}
+}	
+	
+#testy-div {
+	
+	background-color: $testy;
+	margin-top: 30px;
+	
+	#carousel2 {
+	
+		p {
+
+		color: $black;
+		text-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+		text-align: justify;
+		}
+
+		.carousel-caption {
+			
+			position: static;
+		}
+	}
+	
+	.carousel-indicators {
+		
+		position: inherit; /* in carousel */
+		bottom: 0;
+	}
+	
+}
+
+
+
+
+
+

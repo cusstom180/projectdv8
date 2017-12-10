@@ -1,0 +1,35 @@
+/* Scss elements */
+
+body {
+	font-size: 16px;
+	padding-top: 70px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	
+	h1 {
+		
+		text-align: center;
+		font-family: 'Orbitron', sans-serif;
+		text-transform: uppercase;
+	}
+
+	a {
+	
+	&:hover { 
+		
+		text-decoration: none;
+		}
+	}
+	
+		i {
+		color: $dv8_lite_grn;
+
+		&:hover {
+			color: $dv8-dk-grn;
+		}
+	}
+	
+}
+
+
+
+

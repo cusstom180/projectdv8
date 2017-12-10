@@ -1,0 +1,42 @@
+/* Scss Document */
+@import 'mixins';
+
+.jumbotron{
+	
+	text-transform: uppercase;
+	
+	p {
+		
+		a {
+			
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+	}
+}
+
+/* index threecolumn */
+
+#left-index {
+	@include threeColumnIndex;
+	background-image: url(../../images/DSC_0051.JPG);
+	background-position: 0 30%;
+}
+
+#center-index {
+	
+	h2 {
+		margin-left: 20px;
+		margin-right: 20px;
+		line-height: 1.5;
+	}
+}
+
+#center-index {
+	min-height: 250px;
+}
+
+#right-index {
+	@include threeColumnIndex;
+	background-image: url(../../images/promoslide3.jpg)
+}

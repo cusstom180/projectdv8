@@ -1,0 +1,45 @@
+/* Scss footer */
+
+.footer {
+	text-align: left;
+	margin-top: 0px;
+	padding-bottom: 30px;
+	color:$white;
+	background-color: $footer_bg;
+		
+	li {
+		list-style-type: none;
+		font-size: 14px;
+		
+		a {
+			color: $white;
+			
+			&:hover {
+				color: $dv8_dk_grn;
+			}
+		}
+	}
+	
+	p a {
+		font-size: 12px;
+		color: $white;
+		
+		&:hover {
+			color: $dv8_dk_grn;
+			text-decoration: none
+			}
+	}
+	
+	i {
+		margin-right: 10px;
+	}
+}
+
+
+
+
+
+
+
+
+

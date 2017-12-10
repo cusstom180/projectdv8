@@ -1,0 +1,37 @@
+/* Scss utilities classes */
+
+.mar-50 {
+	margin-top: 50px;
+}
+
+.mar-100 {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.mar-bot-50 {
+	margin-bottom: 50px;
+}
+
+.psuedo-btn {
+	
+	background-color: $dv8-lite-grn;
+	
+	&:hover {
+		
+		background-color: darken($dv8-lite-grn, 10%);
+	}
+}
+
+.float-right {
+	
+	float: right;
+}
+
+.center-block {
+	height:100%; 
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}

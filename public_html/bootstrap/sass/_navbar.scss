@@ -1,0 +1,98 @@
+/* Scss for navbar */
+
+
+
+.navbar {
+	
+	.navbar-header {
+		a {
+			img{
+				position: fixed;
+				margin-left: 5%;
+			}
+		}
+		.navbar-toggle {
+			margin-right: 5%;
+		}
+	}
+	
+	.navbar-nav {
+		
+		li {
+			
+			a:active,
+			a:hover,
+			a:focus {
+				border-bottom: 7px $dv8-dk-grn solid;
+				padding-bottom: 8px;
+			}
+			@media screen and (max-width: $break-pt) {
+			
+			}
+			
+		}
+		
+		ul #navbar-space {
+				
+			margin-right: 20px;
+			
+		}
+		
+		.open {
+			
+			background-color: $navbar_bg;
+		}
+		
+		.dropdown-menu {
+			
+			background-color: $navbar_bg;
+			}
+		}
+	
+	.in {
+			margin-left: 5%;
+	}
+
+}
+
+#navbar-logo-kb {
+	
+	display: block;
+		
+		@media screen and (max-width: $break-pt) {
+			
+			display: none;
+		}
+	}
+	
+#navbar-logo-no-kb {
+		
+		display: none;
+		
+		@media screen and (max-width: $break-pt) {
+			
+			display: block;
+	}
+	
+}
+
+#top-line {
+	background-color: $navbar_bg;
+}
+
+
+#soc-links {
+	margin-right: 20px;
+	float: right;
+}
+
+#soc-links a {
+	margin-left: 5px;
+}
+
+#opening-stmt {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+
