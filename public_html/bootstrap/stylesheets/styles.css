@@ -6907,3 +6907,34 @@ body {
   border-style: hidden;
   height: 1000px;
   width: 100%; }
+
+/* Scss program */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/projectdv8\/public_html\/bootstrap\/sass\/_program\.scss}line{font-family:\000033}}
+.program-back {
+  background-image: url(../../images/DSC_0048.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/projectdv8\/public_html\/bootstrap\/sass\/_program\.scss}line{font-family:\0000310}}
+.panel-collapse {
+  margin-left: 20px;
+  margin-right: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/projectdv8\/public_html\/bootstrap\/sass\/_program\.scss}line{font-family:\0000316}}
+.blockquote-reverse {
+  border-right: 0;
+  clear: both; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/projectdv8\/public_html\/bootstrap\/sass\/_program\.scss}line{font-family:\0000322}}
+.quote {
+  margin-right: 30px;
+  margin-left: 30px; }
+
+/* Scss coaches */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/projectdv8\/public_html\/bootstrap\/sass\/_coaches\.scss}line{font-family:\000033}}
+.modal-content {
+  margin: 10px 10px 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/projectdv8\/public_html\/bootstrap\/sass\/_coaches\.scss}line{font-family:\000037}}
+  .modal-content p {
+    margin: 10px 10px 10px; }

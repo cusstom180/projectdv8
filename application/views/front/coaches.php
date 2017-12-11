@@ -1,13 +1,13 @@
-<div class="container mar-tp-100">
+<div class="container mar-50 mar-bot-50">
 	<div class="row">
-		<div class="col-md-4 center-block">
-			<h3>Our coaches</h3>
+		<div class="col-md-4 center-block mar-bot-50">
+			<h1>Our coaches</h1>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-md-4">
           <div class="thumnail text-center">
-          	<img src="img/coach-brian.jpg" class="img-rounded img-responsive" alt="Placeholder image">
+          	<?php echo img('public_html/images/coach-brian.jpg', true, 'class="img-rounded img-responsive" alt="Coach Brian"')?>
           	<a href="#" data-toggle="modal" data-target="#coachbrian">
           		<h3 class="our-ch-a">Coach Brian <i class="fa fa-arrow-right hide1" aria-hidden="true"></i></h3>
           	</a>
@@ -36,7 +36,7 @@
         </div>
         <div class="col-md-4">
           <div class="thumnail text-center">
-          	<img src="img/coach-jami.JPG" class="img-rounded img-responsive" alt="Placeholder image">
+          	<?php echo img('public_html/images/coach-jami.JPG', true, 'class="img-rounded img-responsive" alt="Coach Brian"')?>
           	<a href="#" data-toggle="modal" data-target="#coachjami">
           		<h3 class="our-ch-a">Coach Jami <i class="fa fa-arrow-right hide1" aria-hidden="true"></i></h3>
           	</a>
@@ -65,7 +65,7 @@
         </div>
         <div class="col-md-4">
           <div class="thumnail text-center">
-          	<img src="img/coach-pat.JPG" class="img-rounded img-responsive" alt="Placeholder image">
+          	<?php echo img('public_html/images/coach-pat.JPG', true, 'class="img-rounded img-responsive" alt="Coach Brian"')?>
           	<a href="#" data-toggle="modal" data-target="#coachpat">
           		<h3 class="our-ch-a">Coach Pat <i class="fa fa-arrow-right hide1" aria-hidden="true"></i></h3>
           	</a>
@@ -93,7 +93,7 @@
         </div>
         <div class="col-md-4">
           <div class="thumnail text-center">
-          	<img src="img/Chad-bio.JPG" class="img-rounded img-responsive" alt="Placeholder image">
+          	<?php echo img('public_html/images/Chad-bio.JPG', true, 'class="img-rounded img-responsive" alt="Coach Brian"')?>
           	<a href="#" data-toggle="modal" data-target="#coachchad">
           		<h3 class="our-ch-a">Coach Chad <i class="fa fa-arrow-right hide1" aria-hidden="true"></i></h3>
           	</a>
@@ -123,7 +123,7 @@
         </div>
         <div class="col-md-4">
           <div class="thumnail text-center">
-          	<img src="img/coach-murley.JPG" class="img-rounded img-responsive" alt="Placeholder image">
+          	<?php echo img('public_html/images/coach-murley.JPG', true, 'class="img-rounded img-responsive" alt="Coach Brian"')?>
           	<a href="#" data-toggle="modal" data-target="#coachmurley">
           		<h3 class="our-ch-a">Coach Murley <i class="fa fa-arrow-right hide1" aria-hidden="true"></i></h3>
           	</a>
@@ -154,7 +154,7 @@
         </div>
         <div class="col-md-4">
           <div class="thumnail text-center">
-          	<img src="img/coachem.JPG" class="img-rounded img-responsive" alt="Placeholder image">
+          	<?php echo img('public_html/images/coachem.JPG', true, 'class="img-rounded img-responsive" alt="Coach Brian"')?>
           	<a href="#" data-toggle="modal" data-target="#coachem">
           		<h3 class="our-ch-a">Coach Em <i class="fa fa-arrow-right hide1" aria-hidden="true"></i></h3>
           	</a>
@@ -182,7 +182,7 @@
         </div>
         <div class="col-md-4">
           <div class="thumnail text-center">
-          	<img src="img/coachpatricia.JPG" class="img-rounded img-responsive" alt="Placeholder image">
+          	<?php echo img('public_html/images/coachpatricia.JPG', true, 'class="img-rounded img-responsive" alt="Coach Brian"')?>
           	<a href="#" data-toggle="modal" data-target="#coachpatricia">
           		<h3 class="our-ch-a">Coach Patricia <i class="fa fa-arrow-right hide1" aria-hidden="true"></i></h3>
           	</a>
@@ -216,7 +216,7 @@
         </div>
       	<div class="col-md-4">
           <div class="thumnail text-center">
-          	<img src="img/coachhayley.JPG" class="img-rounded img-responsive" alt="Placeholder image">
+          	<?php echo img('public_html/images/coachhayley.JPG', true, 'class="img-rounded img-responsive" alt="Coach Brian"')?>
           	<a href="#" data-toggle="modal" data-target="#coachhayley">
           		<h3 class="our-ch-a">Coach Hayley <i class="fa fa-arrow-right hide1" aria-hidden="true"></i></h3>
           	</a>
