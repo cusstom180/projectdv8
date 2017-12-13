@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Dec 09, 2017 at 04:28 AM
+-- Generation Time: Dec 13, 2017 at 02:05 AM
 -- Server version: 5.6.35
 -- PHP Version: 7.1.8
 
@@ -21,7 +21,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `img` (
-  `id` int(50) UNSIGNED NOT NULL,
+  `id` varchar(150) NOT NULL,
   `src` varchar(128) NOT NULL,
   `alt` varchar(100) NOT NULL,
   `height` varchar(100) NOT NULL
@@ -32,11 +32,11 @@ CREATE TABLE `img` (
 --
 
 INSERT INTO `img` (`id`, `src`, `alt`, `height`) VALUES
-(1, 'public_html/images/DV8 - icon logo - 1 - final.png', 'CrossFit DV8 logo', '50px'),
-(2, 'public_html/images/DV8 - icon logo - 2 - final.png', 'CrossFit DV8 logo', '150px'),
-(3, 'public_html/images/DSC_0077_bw.jpg', 'CrossFit DV8 in downtown Rochester', ''),
-(4, 'public_html/images/DSC_0162_BW.jpg', 'CrossFit, bootcamp and Olympic weightlifting offered', ''),
-(5, 'public_html/images/DSC_0057_bw.png', 'Join our family', '');
+('3', 'public_html/images/DSC_0077_bw.jpg', 'CrossFit DV8 in downtown Rochester', ''),
+('4', 'public_html/images/DSC_0162_BW.jpg', 'CrossFit, bootcamp and Olympic weightlifting offered', ''),
+('5', 'public_html/images/DSC_0057_bw.png', 'Join our family', ''),
+('navbar-logo-kb', 'public_html/images/DV8 - icon logo - 2 - final.png', 'CrossFit DV8 logo', '150px'),
+('navbar-logo-no-kb', 'public_html/images/DV8 - icon logo - 1 - final.png', 'CrossFit DV8 logo', '50px');
 
 -- --------------------------------------------------------
 
@@ -53,7 +53,7 @@ CREATE TABLE `migrations` (
 --
 
 INSERT INTO `migrations` (`version`) VALUES
-(3);
+(4);
 
 -- --------------------------------------------------------
 
@@ -87,6 +87,27 @@ INSERT INTO `program` (`id`, `name`, `price`, `line_1`, `line_2`, `line_3`) VALU
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(11) UNSIGNED NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `password` varchar(250) NOT NULL,
+  `name` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `email`, `password`, `name`) VALUES
+(1, 'brian@brian.com', '$2y$10$b7WyiA8a2Se9fS9GeXJiTuhDgPGx5nf2OZP6aJFOtoF7Y0G3e5z1K', 'asg'),
+(2, 'cusstom180@yahoo.com', '$2y$10$f6nonGWljRDfZEsWkgIT6e7WVUQJSAN0tpzaCGW9K/SAhGipTiIOK', 'Brian Naperkoski');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `wodify`
 --
 
@@ -107,7 +128,8 @@ INSERT INTO `wodify` (`id`, `link`) VALUES
 (5, 'https://crossfitdv8.wodify.com/OnlineSalesPortal/ReviewPlanPurchase.aspx?OnlineMembershipId=16776&OnlineMembershipPaymentOptionId=166074&IsMobile=True'),
 (6, 'https://crossfitdv8.wodify.com/OnlineSalesPortal/ReviewPlanPurchase.aspx?OnlineMembershipId=56046&OnlineMembershipPaymentOptionId=324556&IsMobile=True'),
 (7, 'http://crossfitdv8.wodify.com/OnlineSalesPortal/Sessions.aspx'),
-(8, 'https://crossfitdv8.wodify.com/OnlineSalesPortal/ViewSchedule.aspx?LocationId=2048&IsMobile=False&OnlineMembershipId=16582');
+(8, 'https://crossfitdv8.wodify.com/OnlineSalesPortal/ViewSchedule.aspx?LocationId=2048&IsMobile=False&OnlineMembershipId=16582'),
+(9, 'https://crossfitdv8.wodify.com/OnlineSalesPortal/ViewSchedule.aspx?LocationId=2048&IsMobile=False&OnlineMembershipId=16583');
 
 --
 -- Indexes for dumped tables
@@ -124,14 +146,18 @@ ALTER TABLE `img`
 -- Indexes for table `program`
 --
 ALTER TABLE `program`
-  ADD PRIMARY KEY (`id`),
+  ADD KEY `id` (`id`);
+
+--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
   ADD KEY `id` (`id`);
 
 --
 -- Indexes for table `wodify`
 --
 ALTER TABLE `wodify`
-  ADD PRIMARY KEY (`id`),
   ADD KEY `id` (`id`);
 
 --
@@ -139,7 +165,7 @@ ALTER TABLE `wodify`
 --
 
 --
--- AUTO_INCREMENT for table `img`
+-- AUTO_INCREMENT for table `users`
 --
-ALTER TABLE `img`
-  MODIFY `id` int(50) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+ALTER TABLE `users`
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;

@@ -28,10 +28,10 @@
                 ),
             ));
             $this->dbforge->add_key('id');
-            $this->dbforge->create_table('program');
+            $this->dbforge->create_table('membership');
         }
         public function down()
         {
-            $this->dbforge->drop_table('program');
+            $this->dbforge->drop_table('membership');
         }
     }
