@@ -6700,6 +6700,16 @@ body {
   align-items: center;
   justify-content: center; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/projectdv8\/public_html\/bootstrap\/sass\/_utilities\.scss}line{font-family:\0000339}}
+.hello {
+  display: inline;
+  color: #000000;
+  animation-delay: 3s;
+  transition-duration: 5s;
+  #transition-property: all;
+  transition-property: cubic-bezier(0.25, 1, 0.33, 1);
+  transform: translateX(6px); }
+
 /* components */
 /* Scss for navbar */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/projectdv8\/public_html\/bootstrap\/sass\/_navbar\.scss}line{font-family:\000039}}
@@ -6709,55 +6719,60 @@ body {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/projectdv8\/public_html\/bootstrap\/sass\/_navbar\.scss}line{font-family:\0000314}}
 .navbar .navbar-header .navbar-toggle {
   margin-right: 5%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/projectdv8\/public_html\/bootstrap\/sass\/_navbar\.scss}line{font-family:\0000323}}
-.navbar .navbar-nav li a:active,
-.navbar .navbar-nav li a:hover,
-.navbar .navbar-nav li a:focus {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/projectdv8\/public_html\/bootstrap\/sass\/_navbar\.scss}line{font-family:\0000321}}
+.navbar .navbar-nav.navbar-right:last-child {
+  margin-right: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/projectdv8\/public_html\/bootstrap\/sass\/_navbar\.scss}line{font-family:\0000327}}
+.navbar .navbar-nav li a:hover {
   border-bottom: 7px #77aa41 solid;
   padding-bottom: 8px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/projectdv8\/public_html\/bootstrap\/sass\/_navbar\.scss}line{font-family:\0000335}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/projectdv8\/public_html\/bootstrap\/sass\/_navbar\.scss}line{font-family:\0000337}}
 .navbar .navbar-nav ul #navbar-space {
   margin-right: 20px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/projectdv8\/public_html\/bootstrap\/sass\/_navbar\.scss}line{font-family:\0000341}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/projectdv8\/public_html\/bootstrap\/sass\/_navbar\.scss}line{font-family:\0000343}}
 .navbar .navbar-nav .open {
   background-color: #F8F8F8; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/projectdv8\/public_html\/bootstrap\/sass\/_navbar\.scss}line{font-family:\0000346}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/projectdv8\/public_html\/bootstrap\/sass\/_navbar\.scss}line{font-family:\0000348}}
 .navbar .navbar-nav .dropdown-menu {
   background-color: #F8F8F8; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/projectdv8\/public_html\/bootstrap\/sass\/_navbar\.scss}line{font-family:\0000352}}
+  .navbar .navbar-nav .dropdown-menu a:hover {
+    border-bottom: 6px #77aa41 solid;
+    padding-bottom: 0px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/projectdv8\/public_html\/bootstrap\/sass\/_navbar\.scss}line{font-family:\0000360}}
 .navbar .in {
   margin-left: 5%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/projectdv8\/public_html\/bootstrap\/sass\/_navbar\.scss}line{font-family:\0000358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/projectdv8\/public_html\/bootstrap\/sass\/_navbar\.scss}line{font-family:\0000366}}
 #navbar-logo-kb {
   display: block; }
   @media screen and (max-width: 768px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/projectdv8\/public_html\/bootstrap\/sass\/_navbar\.scss}line{font-family:\0000358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/projectdv8\/public_html\/bootstrap\/sass\/_navbar\.scss}line{font-family:\0000366}}
     #navbar-logo-kb {
       display: none; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/projectdv8\/public_html\/bootstrap\/sass\/_navbar\.scss}line{font-family:\0000368}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/projectdv8\/public_html\/bootstrap\/sass\/_navbar\.scss}line{font-family:\0000376}}
 #navbar-logo-no-kb {
   display: none; }
   @media screen and (max-width: 768px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/projectdv8\/public_html\/bootstrap\/sass\/_navbar\.scss}line{font-family:\0000368}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/projectdv8\/public_html\/bootstrap\/sass\/_navbar\.scss}line{font-family:\0000376}}
     #navbar-logo-no-kb {
       display: block; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/projectdv8\/public_html\/bootstrap\/sass\/_navbar\.scss}line{font-family:\0000379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/projectdv8\/public_html\/bootstrap\/sass\/_navbar\.scss}line{font-family:\0000387}}
 #top-line {
   background-color: #F8F8F8; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/projectdv8\/public_html\/bootstrap\/sass\/_navbar\.scss}line{font-family:\0000384}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/projectdv8\/public_html\/bootstrap\/sass\/_navbar\.scss}line{font-family:\0000392}}
 #soc-links {
   margin-right: 20px;
   float: right; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/projectdv8\/public_html\/bootstrap\/sass\/_navbar\.scss}line{font-family:\0000389}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/projectdv8\/public_html\/bootstrap\/sass\/_navbar\.scss}line{font-family:\0000397}}
 #soc-links a {
   margin-left: 5px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/projectdv8\/public_html\/bootstrap\/sass\/_navbar\.scss}line{font-family:\0000393}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/projectdv8\/public_html\/bootstrap\/sass\/_navbar\.scss}line{font-family:\00003101}}
 #opening-stmt {
   margin-top: 100px;
   margin-bottom: 100px; }

@@ -18,11 +18,13 @@
 	
 	.navbar-nav {
 		
+		&.navbar-right:last-child {
+			margin-right: 5px;
+		}
+		
 		li {
 			
-			a:active,
-			a:hover,
-			a:focus {
+			a:hover {
 				border-bottom: 7px $dv8-dk-grn solid;
 				padding-bottom: 8px;
 			}
@@ -46,6 +48,12 @@
 		.dropdown-menu {
 			
 			background-color: $navbar_bg;
+			
+			a:hover {
+				
+				border-bottom: 6px $dv8-dk-grn solid;
+				padding-bottom: 0px;
+			}
 			}
 		}
 	

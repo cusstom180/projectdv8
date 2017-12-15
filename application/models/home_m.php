@@ -41,7 +41,7 @@ class Home_m extends MY_Model {
     
     public function getAll(){
         
-        $query = $this->db->get('program')->result_array();
+        $query = $this->db->get('membership')->result_array();
         return $query;
     }
     

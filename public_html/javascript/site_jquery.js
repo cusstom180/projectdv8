@@ -1,13 +1,13 @@
 
 $(document).ready(function(){
 	
-	var windowWidth = $(window).width();
+	/*var windowWidth = $(window).width();
 	
 	if(windowWidth > 768) {
 		
 		$(".btn").mouseover(function () {
 		$(this).children().addClass("hello");
-	});
+	});*/
 	
 	$(".btn").mouseout(function () {
 		$(this).children().removeClass("hello");
@@ -35,8 +35,16 @@ $(document).ready(function(){
 	});
 
 		
+	/*$('.dropdown').hover(function(){ 
+	  $('.dropdown-toggle').trigger('click'); 
+	});
+	
+	$("dropdown").mouseout(function () {
+		$(".dropdown-toggle").off('click');
+	});*/
+
 	$('.dropdown').hover(function(){ 
-	  $('.dropdown-toggle', this).trigger('click'); 
+	  $('.dropdown-toggle').click(); 
 	});
 	
 	

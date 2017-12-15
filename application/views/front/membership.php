@@ -7,7 +7,7 @@
 	</div>
    	<div class="row text-center text-uppercase">
     		<div class="col-md-8 col-md-offset-2">
-        		<?php foreach ($programs as $row) {?>
+        		<?php foreach ($membership as $row) {?>
           	<div class="col-md-3">
               	<h4 class="mem-head"><?php echo $row['name']; ?></h4>
                	<h3><?php echo $row['price']; ?></h3><hr class="hr-block">

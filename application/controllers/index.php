@@ -31,7 +31,7 @@ class Index extends MY_Controller {
     
     public function membership() {
         
-        $this->data['programs'] = $this->home_m->getAll('id');
+        $this->data['membership'] = $this->home_m->getAll('id');
         
         //load the page view
         $this->data['subview'] = 'front/membership';

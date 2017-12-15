@@ -58,6 +58,22 @@ class Admin_M extends MY_Model {
         return $result;
     }
     
+    public function loginProcess($data) {
+        $data['password'] = password_hash($data['password'], PASSWORD_BCRYPT);
+        $this->db->from($this->_tableName);
+        $this->db->where($data);
+        $query = $this->db->get()->result_array();
+        $last = $this->db->last_query();
+        echo var_dump($last);
+        if ($query) {
+            $result = $query;
+            
+        } else {
+            $result = false;
+        }
+        return $result;
+    }
+    
 }
 
 

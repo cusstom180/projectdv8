@@ -33,7 +33,14 @@ class Admin extends MY_Controller {
     
     public function login() {
         
-        echo 'hi';
+        $data = $this->admin_m->arrayFromPost(array('email', 'password'));
+        $result = $this->admin_m->loginProcess($data);
+        if ($result) {
+            $this->session->set_userdata('name', $result['name']);
+            $this->session->set_userdata('email', $result['email']);
+        }
+        //echo var_dump($data);
+        echo var_dump($result);
     }
     
     public function insert() {
