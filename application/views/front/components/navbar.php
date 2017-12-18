@@ -27,6 +27,7 @@
         <li><?php echo anchor('index/programs', 'Programs');?></li>
         <li><?php echo anchor('index/membership', 'Membership');?></li>
         <li><?php echo anchor('index/schedule', 'Schedule');?></li>
+        <li><?php echo anchor('index/contact', 'Contact');?></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us<span class="caret"></span></a>
           <ul class="dropdown-menu">

@@ -11,7 +11,7 @@
 <div class="jumbotron text-center work">
   <h1>get started today</h1>
   <p>
-  	<a class="btn btn-default btn-lg" href="getting-started.php" role="button">i'm new to crossfit <i class="fa fa-arrow-right hide1" aria-hidden="true"></i></a>
-  	<a class="btn btn-default btn-lg" href="class-schedule.php" role="button">not my first rodeo <i class="fa fa-arrow-right hide1" aria-hidden="true"></i></a>
+  	<a class="btn btn-default btn-lg" href="<?php echo base_url('index/gettingstarted');?>" role="button">i'm new to crossfit <i class="fa fa-arrow-right hide1" aria-hidden="true"></i></a>
+  	<a class="btn btn-default btn-lg" href="<?php echo base_url('index/schedule');?>" role="button">not my first rodeo <i class="fa fa-arrow-right hide1" aria-hidden="true"></i></a>
   </p>
 </div>

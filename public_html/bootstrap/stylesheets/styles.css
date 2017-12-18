@@ -6953,3 +6953,9 @@ body {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/projectdv8\/public_html\/bootstrap\/sass\/_coaches\.scss}line{font-family:\000037}}
   .modal-content p {
     margin: 10px 10px 10px; }
+
+/* Scss contact */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/projectdv8\/public_html\/bootstrap\/sass\/_contact\.scss}line{font-family:\000033}}
+.contact-header {
+  background-color: #B3AEAE;
+  padding: 90px; }

@@ -12,7 +12,7 @@ $(document).ready(function(){
 	$(".btn").mouseout(function () {
 		$(this).children().removeClass("hello");
 	});
-	}
+	
 	
 	$(".carousel").on("slid.bs.carousel", function () {
 		$(".pop").attr("id", "sliderr");
@@ -43,8 +43,8 @@ $(document).ready(function(){
 		$(".dropdown-toggle").off('click');
 	});*/
 
-	$('.dropdown').hover(function(){ 
-	  $('.dropdown-toggle').click(); 
+	$(".dropdown").hover(function(){ 
+	  $(".dropdown-toggle").click(); 
 	});
 	
 	
