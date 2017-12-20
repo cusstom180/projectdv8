@@ -4,8 +4,11 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CrossFit DV8 | Deviate from the Norm</title>
-
+<?php foreach ($meta as $title) {?>
+<title><?php echo $title['title'];?></title>
+<?php } ?>
+<?php ?>
+<?php echo $trace['function'];?>
 <!-- Bootstrap -->
 <!-- <link href="css/bootstrap.css" rel="stylesheet"> -->
 <!-- <link rel="shortcut icon" href="img/dv8-web-icon.png" type="image/x-icon" /> -->

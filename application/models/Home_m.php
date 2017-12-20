@@ -7,19 +7,19 @@ class Home_m extends MY_Model {
         
     }
     
-    public function getNavbarImg() {
+    public function likeString($str, $table) {
         
-        $id = array('1', '2');
-        $this->db->from($this->_tableName);
-        $query = $this->db->where_in('id', $id);
+        $this->db->from($table);
+        $query = $this->db->like('src', $str);
         return $result = $this->db->get()->result_array();
         
     }
     
-    public function getByString($str) {
+    public function getByString($table, $where, $str) {
         
-        $this->db->from($this->_tableName);
-        $query = $this->db->like('src', $str);
+        $this->db->from($table);
+        $query = $this->db->where($where, $str);
+        echo $this->db->last_query();
         return $result = $this->db->get()->result_array();
         
     }
@@ -31,19 +31,23 @@ class Home_m extends MY_Model {
         return $value;
     }
     
-    public function getWodifyView($str) {
-        
-        $this->db->from('wodify');
-        $query = $this->db->where('id', $str);
-        $subview = $this->db->get()->result_array();
-        return $subview;
-    }
-    
     public function getAll(){
         
         $query = $this->db->get('membership')->result_array();
         return $query;
     }
+    
+    public function callingBack(){
+        
+        $call = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS,1);
+        foreach ($call as $key=>$value) {
+            if($key == 'function') {
+                $func = $value;
+            }
+        }
+        return $func;
+    }
+    
     
     
 }

@@ -9,10 +9,6 @@ $(document).ready(function(){
 		$(this).children().addClass("hello");
 	});*/
 	
-	$(".btn").mouseout(function () {
-		$(this).children().removeClass("hello");
-	});
-	
 	
 	$(".carousel").on("slid.bs.carousel", function () {
 		$(".pop").attr("id", "sliderr");
@@ -25,15 +21,24 @@ $(document).ready(function(){
   		interval: 0}
 	);
 	
+	//rollover script
+	$(".roll").hover(function(){
+		$(this).addClass("rollover");
+	}, function(){
+		$(this).removeClass("rollover");
+	});
+	
+	
+
 	// add animantion to btn arrows
-	$(".our-ch-a").mouseover(function () {
+	/*$(".our-ch-a").mouseover(function () {
 		$(this).children().addClass("hello");
 	});
 	
 	$(".our-ch-a").mouseout(function () {
 		$(this).children().removeClass("hello");
 	});
-
+*/
 		
 	/*$('.dropdown').hover(function(){ 
 	  $('.dropdown-toggle').trigger('click'); 

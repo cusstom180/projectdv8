@@ -23,16 +23,16 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="topFixedNavbar1">
       <ul class="nav navbar-nav navbar-right" id="nav-space">
-        <li><?php echo anchor('index/gettingstarted', 'Getting Started');?></li>
-        <li><?php echo anchor('index/programs', 'Programs');?></li>
-        <li><?php echo anchor('index/membership', 'Membership');?></li>
-        <li><?php echo anchor('index/schedule', 'Schedule');?></li>
-        <li><?php echo anchor('index/contact', 'Contact');?></li>
+        <li><?php echo anchor('gettingstarted', 'Getting Started');?></li>
+        <li><?php echo anchor('programs', 'Programs');?></li>
+        <li><?php echo anchor('membership', 'Membership');?></li>
+        <li><?php echo anchor('schedule', 'Schedule');?></li>
+        <li><?php echo anchor('contact', 'Contact');?></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><?php echo anchor('index/coaches', 'Our Coaches');?></li>
-            <li><?php echo anchor('index/community', 'Our Community');?></li>
+            <li><?php echo anchor('coaches', 'Our Coaches');?></li>
+            <li><?php echo anchor('community', 'Our Community');?></li>
           </ul>
         </li>
       </ul>

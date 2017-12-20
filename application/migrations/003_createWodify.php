@@ -6,7 +6,12 @@
                 'id' => array(
                     'type' => 'INT',
                     'constraint' => 20,
-                ),'link' => array(
+                ),
+                'name' => array(
+                    'type' => 'VARCHAR',
+                    'constraint' => '100',
+                ),
+                'link' => array(
                     'type' => 'VARCHAR',
                     'constraint' => '250',
                 ),

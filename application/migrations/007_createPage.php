@@ -24,3 +24,4 @@
             $this->dbforge->drop_table('page');
         }
     }
+

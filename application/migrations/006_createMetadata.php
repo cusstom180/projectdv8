@@ -11,9 +11,13 @@
                     'type' => 'VARCHAR',
                     'constraint' => '100',
                 ),
+                'name' => array(
+                    'type' => 'VARCHAR',
+                    'constraint' => '100',
+                ),
                 'content' => array(
                     'type' => 'VARCHAR',
-                    'constraint' => '255',
+                    'constraint' => '170',
                 ),
             ));
             $this->dbforge->add_key('id');
