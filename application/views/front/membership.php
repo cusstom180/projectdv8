@@ -9,7 +9,7 @@
     		<div class="col-md-8 col-md-offset-2">
         		<?php foreach ($membership as $row) {?>
           	<div class="col-md-3">
-              	<h4 class="mem-head"><?php echo $row['name']; ?></h4>
+              	<a href="<?php echo base_url('programs'.$row['program']); ?>"><h4 class="mem-head"><?php echo $row['name']; ?></h4></a>
                	<h3><?php echo $row['price']; ?></h3><hr class="hr-block">
                	<p><?php echo $row['line_1']?></p><hr>
               	<p><?php echo $row['line_2']?></p><hr>
@@ -27,8 +27,9 @@
       	</div>
   	</div> 
    	<div class="row">
-    		<div class="text-center mar-50">
+    		<div class="text-center mar-50 mar-bot-50">
         		<p>&#42; student, couple, and family rates available upon request</p>
+        		<?php echo anchor('https://app.wodify.com/Waivers/SignWEntry.aspx?Token=02752157747F25D5310A26888457A6A275C7AE655EB2E411012E69EE8AE575F0', heading('Sign a Waiver', 3), 'target="_blank"')?>
       	</div>
     	</div>
 </div>

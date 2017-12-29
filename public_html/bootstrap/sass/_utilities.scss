@@ -36,12 +36,16 @@
     justify-content: center;
 }
 
+.hide1 {
+	display: none;
+}
+
 .hello {
 	display: inline;
 	color:#000000;
 	animation-delay: 3s;
 	transition-duration: 5s;
-	#transition-property: all;
+	transition-property: all;
 	transition-property: cubic-bezier(0.25, 1, 0.33,1);
 	transform: translateX(6px);
 }
@@ -50,3 +54,4 @@
 	background-image: url(../../images/DSC_0057_bw.png);
 	opacity: .5;
 }
+

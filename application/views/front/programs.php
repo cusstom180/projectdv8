@@ -5,9 +5,9 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-10 col-md-offset-1">
+		<div class="col-md-10 col-md-offset-1" id="all">
             <div class="row mar-bot-50">
-              <div class="col-md-6">
+              <div id="crossfit" class="col-md-6">
                 <h1>CrossFit</h1>
 				<hr class="hr-block">
                 <p>Our classes are designed to provide a lot of teaching and coaching to ensure that our athletes are getting the most out of each class. Each class will focus on building up each athlete’s strength levels while also improving upon their skills and technique.</p>
@@ -19,7 +19,7 @@
                   <h4 class="blockquote-reverse">&#8212; Courtesy of <cite title="CrossFit.com">CrossFit.com</cite></h4>
                   </div>
                 </div>
-              <div class="col-md-6">
+              <div id="bootcamp" class="col-md-6">
                 <h1>BootCamp</h1>
 				<hr class="hr-block">
                 <p>We run a high intensity BootCamp class that is open to everyone. BootCamp classes focus on building strength, power and endurance using your own bodyweight as resistance as well as some classic conditioning instruments like kettlebells, dumbbells, and jump ropes.</p>
@@ -35,7 +35,7 @@
                 <p>This sport trains your dynamic and explosive strength, using your body’s full range of motion while requiring mental focus as well as good mobility. The two competition lifts, the snatch and clean &amp; jerk, are often incorporated into the CrossFit workouts, and it is essential to learn the proper technique in order to perform safely and effectively especially during the high-intensity workouts.</p>
                 <p>Our general Olympic Weightlifting development program consists of three classes a week. Each class focuses on drills, progressions, and exercises designed to improve your proficiency in the snatch and clean &amp; jerk. Tuesdays are focused on snatches, Thursdays are focused on clean &amp; jerks, and Sundays are focused on both lifts. The program is designed to accommodate athletes of all skill levels, so you will get a challenging and rewarding experience in every class, regardless of your training background.</p>
               </div>
-              <div class="col-md-6">
+              <div id="youthfitness" class="col-md-6">
                 <h1>Youth Fitness</h1>
 				<hr class="hr-block">
                 <p>Our Youth Fitness program is focused on building our children’s physical capacity for exercise and sports. We help make them better athletes and more resistant to injury while maintaining a fun atmosphere that will keep kids interested also helping them build confidence and make new friends.</p>

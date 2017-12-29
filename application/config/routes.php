@@ -57,5 +57,6 @@ $route['schedule'] = 'index/schedule';
 $route['contact'] = 'index/contact';
 $route['coaches'] = 'index/coaches';
 $route['community'] = 'index/community';
+$route['thankyou'] = 'index/thankyou';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

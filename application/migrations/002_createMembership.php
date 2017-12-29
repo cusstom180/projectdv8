@@ -6,6 +6,9 @@
                 'id' => array(
                     'type' => 'INT',
                     'constraint' => 20,
+                ),'program' => array(
+                    'type' => 'VARCHAR',
+                    'constraint' => '50',
                 ),'name' => array(
                     'type' => 'VARCHAR',
                     'constraint' => '150',

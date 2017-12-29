@@ -9,8 +9,19 @@
 		
 		a {
 			
+			margin-top: 10px;
 			margin-left: 20px;
 			margin-right: 20px;
+			
+			@media screen and (min-width: 576px) and (max-width: 767px) {
+			font-size: 1.2em;
+			}
+		
+			@media screen and (max-width: 575px) {
+
+				font-size: .9em;
+			}
+			
 		}
 	}
 }
@@ -19,7 +30,7 @@
 
 #left-index {
 	@include threeColumnIndex;
-	background-image: url(../../images/DSC_0051.JPG);
+	background-image: url(../../images/girl_doing_pull_ups_with_band.jpg);
 	background-position: 0 30%;
 }
 
@@ -29,6 +40,27 @@
 		margin-left: 20px;
 		margin-right: 20px;
 		line-height: 1.5;
+		
+		@media screen and (min-width: 576px) and (max-width: 767px) {
+			font-size: 1.8em;
+			}
+		
+		@media screen and (max-width: 575px) {
+
+			font-size: 1.6em;
+		}
+	}
+	
+	h3 {
+		
+		@media screen and (min-width: 576px) and (max-width: 767px) {
+			font-size: 1.7em;
+			}
+		
+		@media screen and (max-width: 575px) {
+
+			font-size: 1.5em;
+		}
 	}
 }
 
@@ -38,5 +70,5 @@
 
 #right-index {
 	@include threeColumnIndex;
-	background-image: url(../../images/promoslide3.jpg)
+	background-image: url(../../images/group_class_encouraging_athlete.jpg)
 }

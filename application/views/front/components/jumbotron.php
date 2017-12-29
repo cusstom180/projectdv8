@@ -6,6 +6,64 @@
 			</h3>
 		</div>
 	</div>
+	<div class="row">
+		<?php /* echo form_open('');
+		      echo validation_errors();
+		      echo form_label('First Name', 'first_name');
+		      echo form_input('first_name');
+		      echo form_label('Last Name', 'last_name');
+		      echo form_input('last_name');
+		      echo form_label('Email', 'email');
+		      echo form_input('email');
+		      echo form_submit('leadsubmit', 'Sign me up!', 'class="btn btn-default" data-toggle="modal" data-target="#myModal"');
+		      echo form_close(); */
+		?>	
+			<form method="post" id="leadsubmit">
+     			<label for="first_name">First Name</label> 
+     			<input id="first_name" type="text" name="first_name"> 
+    	 			<label for="last_name">Last Name</label> 
+    	 			<input id="last_name"  type="text" name="Last_name"> 
+    	 			<label for="email">Email</label> 
+    	 			<input type="text" name="email"> 
+    	  			<button onclick="addlead()" type="button">Click Me!</button>  
+			</form>
+	</div>
+	
+	<script type="text/javascript">
+		function addlead() {
+			
+			var param = $("#leadsubmit").serialize();
+			$.post('<?php echo base_url('index/inset'); ?>', param,
+					function(data) 
+					{
+					$('#loading_pic').hide();
+					 if(data == "Success")
+					 {
+					  alert("poop");
+					 }
+					});
+					);
+			
+		}
+	</script>
+	<!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+</div>
 </div>
 
 <div class="jumbotron text-center work">

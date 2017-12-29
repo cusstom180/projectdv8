@@ -59,21 +59,38 @@ class Admin_M extends MY_Model {
     }
     
     public function loginProcess($data) {
+        
         $data['password'] = password_hash($data['password'], PASSWORD_BCRYPT);
-        $this->db->from($this->_tableName);
+        //var_dump($data);
+        //$this->db->from($this->_tableName);
+        $this->db->select('*');
         $this->db->where($data);
-        $query = $this->db->get()->result_array();
-        $last = $this->db->last_query();
-        echo var_dump($last);
+        $query = $this->db->get($this->_tableName);
+        $result = $query->result_array();
+        var_dump($result);
+        //$stm = $query->result_array();
+        //var_dump($stm);
+        //echo $this->db->last_query();
         if ($query) {
-            $result = $query;
-            
+            $result = true;
         } else {
             $result = false;
         }
+        
         return $result;
     }
     
+    public function getByArray($table, $where, $select) {
+        
+        $this->db->from($table);
+        $query = $this->db->where($select);
+        
+        return $result = $this->db->get()->result_array();
+    }
+    
+    
+    public function logout() {
+        
+        $this->session->sess_destroy();
+    }
 }
-
-

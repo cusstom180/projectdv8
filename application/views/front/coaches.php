@@ -4,14 +4,13 @@
 			<h1>Our coaches</h1>
 		</div>
 	</div>
-	<div class="row">
+	<div class="row">   
 		<div class="col-md-4">
           <div class="thumnail text-center">
-          	<?php echo img('public_html/images/coach-brian.jpg', true, 'class="img-rounded img-responsive roll" alt="Coach Brian"')?>
           	<a href="#" data-toggle="modal" data-target="#coachbrian">
-          		<h3 class="our-ch-a">Coach Brian <i class="fa fa-arrow-right hide1" aria-hidden="true"></i></h3>
+          		<?php echo img('public_html/images/coach_brian.jpg', true, 'class="img-rounded img-responsive roll" alt="Coach Brian"')?>
+          		<h3>Coach Brian <i class="fa fa-arrow-right hide1" aria-hidden="true"></i></h3>
           	</a>
-          	<!--<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal1">get to know me</button>-->
           	<div id="coachbrian" class="modal" role="dialog">
           		<div class="modal-dialog">
           			<div class="modal-content">
@@ -36,11 +35,10 @@
         </div>
         <div class="col-md-4">
           <div class="thumnail text-center">
-          	<?php echo img('public_html/images/coach-jami.JPG', true, 'class="img-rounded img-responsive" alt="Coach Jami"')?>
           	<a href="#" data-toggle="modal" data-target="#coachjami">
-          		<h3 class="our-ch-a">Coach Jami <i class="fa fa-arrow-right hide1" aria-hidden="true"></i></h3>
+          		<?php echo img('public_html/images/coach_jami.jpg', true, 'class="img-rounded img-responsive roll" alt="Coach Jami"')?>
+          		<h3>Coach Jami <i class="fa fa-arrow-right hide1" aria-hidden="true"></i></h3>
           	</a>
-          	<!--<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal1">get to know me</button>-->
           	<div id="coachjami" class="modal" role="dialog">
           		<div class="modal-dialog">
           			<div class="modal-content">
@@ -65,11 +63,10 @@
         </div>
         <div class="col-md-4">
           <div class="thumnail text-center">
-          	<?php echo img('public_html/images/coach-pat.JPG', true, 'class="img-rounded img-responsive" alt="Coach Pat"')?>
-          	<a href="#" data-toggle="modal" data-target="#coachpat">
-          		<h3 class="our-ch-a">Coach Pat <i class="fa fa-arrow-right hide1" aria-hidden="true"></i></h3>
+          <a href="#" data-toggle="modal" data-target="#coachpat">
+          		<?php echo img('public_html/images/coach_pat.jpg', true, 'class="img-rounded img-responsive roll" alt="Coach Pat"')?>
+          		<h3>Coach Pat <i class="fa fa-arrow-right hide1" aria-hidden="true"></i></h3>
           	</a>
-          	<!--<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal1">get to know me</button>-->
           	<div id="coachpat" class="modal" role="dialog">
           		<div class="modal-dialog">
           			<div class="modal-content">
@@ -93,11 +90,10 @@
         </div>
         <div class="col-md-4">
           <div class="thumnail text-center">
-          	<?php echo img('public_html/images/Chad-bio.JPG', true, 'class="img-rounded img-responsive" alt="Coach Chad"')?>
-          	<a href="#" data-toggle="modal" data-target="#coachchad">
-          		<h3 class="our-ch-a">Coach Chad <i class="fa fa-arrow-right hide1" aria-hidden="true"></i></h3>
+          <a href="#" data-toggle="modal" data-target="#coachchad">
+          		<?php echo img('public_html/images/Coach_Chad_bio.jpg', true, 'class="img-rounded img-responsive roll" alt="Coach Chad"')?>
+          		<h3>Coach Chad <i class="fa fa-arrow-right hide1" aria-hidden="true"></i></h3>
           	</a>
-          	<!--<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal1">get to know me</button>-->
           	<div id="coachchad" class="modal" role="dialog">
           		<div class="modal-dialog">
           			<div class="modal-content">
@@ -123,11 +119,10 @@
         </div>
         <div class="col-md-4">
           <div class="thumnail text-center">
-          	<?php echo img('public_html/images/coach-murley.JPG', true, 'class="img-rounded img-responsive" alt="Coach Murley"')?>
-          	<a href="#" data-toggle="modal" data-target="#coachmurley">
-          		<h3 class="our-ch-a">Coach Murley <i class="fa fa-arrow-right hide1" aria-hidden="true"></i></h3>
+          <a href="#" data-toggle="modal" data-target="#coachmurley">
+          		<?php echo img('public_html/images/coach_murley.jpg', true, 'class="img-rounded img-responsive roll" alt="Coach Murley"')?>
+          		<h3>Coach Murley <i class="fa fa-arrow-right hide1" aria-hidden="true"></i></h3>
           	</a>
-          	<!--<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal1">get to know me</button>-->
           	<div id="coachmurley" class="modal" role="dialog">
           		<div class="modal-dialog">
           			<div class="modal-content">
@@ -154,11 +149,10 @@
         </div>
         <div class="col-md-4">
           <div class="thumnail text-center">
-          	<?php echo img('public_html/images/coachem.JPG', true, 'class="img-rounded img-responsive" alt="Coach Em"')?>
-          	<a href="#" data-toggle="modal" data-target="#coachem">
-          		<h3 class="our-ch-a">Coach Em <i class="fa fa-arrow-right hide1" aria-hidden="true"></i></h3>
+          <a href="#" data-toggle="modal" data-target="#coachem">
+          		<?php echo img('public_html/images/coach_em.jpg', true, 'class="img-rounded img-responsive roll" alt="Coach Em"')?>
+          		<h3>Coach Em <i class="fa fa-arrow-right hide1" aria-hidden="true"></i></h3>
           	</a>
-          	<!--<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal1">get to know me</button>-->
           	<div id="coachem" class="modal" role="dialog">
           		<div class="modal-dialog">
           			<div class="modal-content">
@@ -182,11 +176,10 @@
         </div>
         <div class="col-md-4">
           <div class="thumnail text-center">
-          	<?php echo img('public_html/images/coachpatricia.JPG', true, 'class="img-rounded img-responsive" alt="Coach Patricia"')?>
-          	<a href="#" data-toggle="modal" data-target="#coachpatricia">
-          		<h3 class="our-ch-a">Coach Patricia <i class="fa fa-arrow-right hide1" aria-hidden="true"></i></h3>
+          <a href="#" data-toggle="modal" data-target="#coachpatricia">
+          		<?php echo img('public_html/images/coach_patricia.jpg', true, 'class="img-rounded img-responsive roll" alt="Coach Patricia"')?>
+          		<h3>Coach Patricia <i class="fa fa-arrow-right hide1" aria-hidden="true"></i></h3>
           	</a>
-          	<!--<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal1">get to know me</button>-->
           	<div id="coachpatricia" class="modal" role="dialog">
           		<div class="modal-dialog">
           			<div class="modal-content">
@@ -216,11 +209,10 @@
         </div>
       	<div class="col-md-4">
           <div class="thumnail text-center">
-          	<?php echo img('public_html/images/coachhayley.JPG', true, 'class="img-rounded img-responsive" alt="Coach Hayley"')?>
-          	<a href="#" data-toggle="modal" data-target="#coachhayley">
-          		<h3 class="our-ch-a">Coach Hayley <i class="fa fa-arrow-right hide1" aria-hidden="true"></i></h3>
+          <a href="#" data-toggle="modal" data-target="#coachhayley">
+          		<?php echo img('public_html/images/coach_hayley.jpg', true, 'class="img-rounded img-responsive roll" alt="Coach Hayley"')?>
+          		<h3>Coach Hayley <i class="fa fa-arrow-right hide1" aria-hidden="true"></i></h3>
           	</a>
-          	<!--<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal1">get to know me</button>-->
           	<div id="coachhayley" class="modal" role="dialog">
           		<div class="modal-dialog">
           			<div class="modal-content">

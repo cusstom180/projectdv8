@@ -6,7 +6,7 @@
      	<a href="https://www.facebook.com/CrossfitDV8/" title="CrossFit DV8 Facebook page" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
       	<a href="https://www.instagram.com/crossfitdv8/" title="CrossFit DV8 Instragram" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
       	<a href="https://twitter.com/CrossFitDV8" title="CrossFit DV8 twitter" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-     	<a href="tel:2482666688" title="Call Us"><i class="fa fa-phone" aria-hidden="true"><span id="black">(246) 266-6688</span></i></a>
+     	<a href="tel:2482666688" title="Call Us"><i class="fa fa-phone" aria-hidden="true"><span id="black">(248) 266-6688</span></i></a>
     </div>
    </div>
     <!-- Brand and toggle get grouped for better mobile display -->

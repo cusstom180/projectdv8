@@ -77,7 +77,7 @@ $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
 	'username' => 'dv8online',
-	'password' => 'cUB,u{Bu-$(?',
+	'password' => 'Zk=PVur7[ae!',
 	'database' => 'dv8_dba',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',

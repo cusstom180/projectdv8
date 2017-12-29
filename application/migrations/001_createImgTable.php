@@ -20,6 +20,10 @@
                     'type' => 'VARCHAR',
                     'constraint' => '100',
                 ),
+                'page' => array(
+                    'type' => 'VARCHAR',
+                    'constraint' => '50',
+                ),
             ));
             $this->dbforge->add_key('id');
             $this->dbforge->create_table('img');

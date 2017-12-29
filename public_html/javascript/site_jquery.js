@@ -24,6 +24,7 @@ $(document).ready(function(){
 	//rollover script
 	$(".roll").hover(function(){
 		$(this).addClass("rollover");
+		$(this).append("<div>hi</div>");
 	}, function(){
 		$(this).removeClass("rollover");
 	});
@@ -31,14 +32,16 @@ $(document).ready(function(){
 	
 
 	// add animantion to btn arrows
-	/*$(".our-ch-a").mouseover(function () {
+	$(".btn").mouseover(function () {
 		$(this).children().addClass("hello");
+		var boom = $(this).children();
+		console.log(boom);
 	});
 	
-	$(".our-ch-a").mouseout(function () {
+	$(".btn").mouseout(function () {
 		$(this).children().removeClass("hello");
 	});
-*/
+
 		
 	/*$('.dropdown').hover(function(){ 
 	  $('.dropdown-toggle').trigger('click'); 
@@ -52,10 +55,10 @@ $(document).ready(function(){
 	  $(".dropdown-toggle").click(); 
 	});
 	
+	$("#leadsubmit").click(function(){
+		//alert('click it');
+	});
 	
-	//$(".btn").mouseover(function () {
-//		alert("pop up");
-//		$(this).children.append("<i class='fa fa-arrow-right hide1' aria-hidden='true'></i>");
-//	});
+	
 	
 });

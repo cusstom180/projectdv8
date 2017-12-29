@@ -3,6 +3,24 @@ class Home_m extends MY_Model {
     
     protected $_tableName = 'img';
     
+    public $rules_leads = array(
+        'fname' => array(
+            'field' => 'first_name',
+            'label' => 'First Name',
+            'rules' => 'trim|required'
+        ),
+        'lname' => array(
+            'field' => 'last_name',
+            'label' => 'Last Name',
+            'rules' => 'trim|required'
+        ),
+        'email' => array(
+            'field' => 'email',
+            'label' => 'Email',
+            'rules' => 'trim|required|is_unique[leads.email]|valid_email'
+        ),
+    );
+    
     function __construct() {
         
     }
@@ -15,14 +33,13 @@ class Home_m extends MY_Model {
         
     }
     
-    public function getByString($table, $where, $str) {
+    /* public function getByString($table, $where, $str) {
         
         $this->db->from($table);
         $query = $this->db->where($where, $str);
-        echo $this->db->last_query();
         return $result = $this->db->get()->result_array();
         
-    }
+    } */
     
     public function getPost($str) {
         
@@ -31,23 +48,28 @@ class Home_m extends MY_Model {
         return $value;
     }
     
-    public function getAll(){
+    public function getAll($table){
         
-        $query = $this->db->get('membership')->result_array();
+        $query = $this->db->get($table)->result_array();
         return $query;
     }
     
     public function callingBack(){
         
-        $call = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS,1);
-        foreach ($call as $key=>$value) {
-            if($key == 'function') {
-                $func = $value;
+        $call = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS,2);
+        foreach ($call as $array) {
+            foreach ($array as $key=>$value) {
+                if($key == 'function') {
+                    $func = $value;
+                }
             }
         }
         return $func;
     }
     
-    
+    public function insert($array) {
+        
+        $this->db->insert('leads', $array);
+    }
     
 }

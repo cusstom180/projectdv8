@@ -1,4 +1,12 @@
 <div class="container">
+	<?php if (isset($error)) { ?>
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3">
+		<div>errors</div>
+			<div class="alert danger"><?php echo $_SERVER['error']; ?></div>
+		</div>
+	</div>
+	<?php } ?>
 	<div class="row">
 		<div class="col-md-6 col-md-offset-3">
 			<?php echo form_open('admin/login'); ?>

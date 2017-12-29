@@ -5,8 +5,6 @@ class Admin extends MY_Controller {
         
         parent::__construct();
         $this->load->library('session');
-        $this->load->helper('form');
-        $this->load->library('form_validation');
         $this->load->model('admin_m');
     }
     
@@ -34,13 +32,27 @@ class Admin extends MY_Controller {
     public function login() {
         
         $data = $this->admin_m->arrayFromPost(array('email', 'password'));
+        //var_dump($data);
         $result = $this->admin_m->loginProcess($data);
-        if ($result) {
-            $this->session->set_userdata('name', $result['name']);
-            $this->session->set_userdata('email', $result['email']);
+        print_r($result);
+        //echo is_array($data);
+        if ($result === true) {
+            echo 'in if stmt';
+            $name = $this->admin_m->getByArray('user', 'email', $data);
+            $this->session->set_userdata('name', $name);
+            $this->session->set_userdata('email', $data['email']);
+            $this->session->set_userdata('loggedIn', true);
+            
+            //redirect('admin/account');
+            
         }
+        else {
+            echo 'something went wrong';
+        }
+        
         //echo var_dump($data);
-        echo var_dump($result);
+        //echo var_dump($result);
+        //echo var_dump($name);
     }
     
     public function insert() {
@@ -57,13 +69,42 @@ class Admin extends MY_Controller {
             if (!empty($data['password'])) {
                 $data['password'] = password_hash($data['password'], PASSWORD_BCRYPT);
                 $this->admin_m->insert($data);
-                
+                $this->data['subview'] = 'admin/success';
             }
-            
-            $this->load->view('Admin/success', $data);
             
         }
         
+        //load the page view
+        $this->data['subview'] = 'admin/form';
+        $this->load->view('admin/_mainlayout', $this->data);
+    }
+    
+    public function account(){
+        
+        if($this->session->loggedIn === true ) {
+            
+            $data = array(
+                'name' => $this->session->name,
+                'email'=> $this->session->email,
+                'loggedIn'=> $this->session->loggedIn,
+            );
+            
+            echo var_dump($data);
+        } else {
+            
+            $this->session->set_flashdata('error', 'Please login in again');
+            
+            //load the page view
+            $this->data['subview'] = 'admin/login';
+            $this->load->view('admin/_mainlayout', $this->data);
+            //redirect('admin');
+        }
+    }
+    
+    public function  logout() {
+        
+        $this->admin_m->logout();
+        redirect('admin');
     }
     
 }

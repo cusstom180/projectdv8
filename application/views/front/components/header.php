@@ -4,11 +4,24 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<?php foreach ($meta as $title) {?>
-<title><?php echo $title['title'];?></title>
+<?php echo link_tag('public_html/images/dv8_web_icon.png', 'icon', 'image/png'); ?>
+
+<?php foreach ($title as $key) { ?>
+ <title><?php echo $key['title']; ?></title>
 <?php } ?>
-<?php ?>
-<?php echo $trace['function'];?>
+<?php foreach ($meta as $value) { ?>
+<meta name="<?php echo $value['name']; ?>" content="<?php echo $value['content'];?>" >
+<?php } ?>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-75136848-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-75136848-1');
+</script>
+
 <!-- Bootstrap -->
 <!-- <link href="css/bootstrap.css" rel="stylesheet"> -->
 <!-- <link rel="shortcut icon" href="img/dv8-web-icon.png" type="image/x-icon" /> -->

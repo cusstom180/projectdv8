@@ -12,28 +12,29 @@
             				<p> I cannot pinpoint the exact reason DV8 is working for me. I only know I want to go, then when I’m here, I think I’m going to die, then I don’t! When I’m finished, I look forward to coming back again. </p>
             				<i class="fa fa-quote-right fa-pull-right" aria-hidden="true"></i>
             
-            				<p class="float-right">&#8212; Alice</p>
+            				<p class="fa-pull-right">&#8212; Alice</p>
             			  </div>
             			</div>
             			<div class="item">
             			  <div class="carousel-caption">
-            				<i class="fa fa-quote-left left-quote" aria-hidden="true"></i>
+            				<i class="fa fa-quote-left fa-pull-left"" aria-hidden="true"></i>
             				<p>I started Crossfit Deviate in January of 2017 when my friend, who is a member along with his family, offered me a free month tryout. I started with the ramp class, which was an introduction to crossfit, where I learned certain exercises. It was a challenge for sure but I felt great afterwards. It was then that I decided to really stick with the program. I started the morning classes with coach Brian an average of 3 days a week where he would teach me how to warm up, work on my weight training for strength and prepare for the Workout of the Day (WOD). It hasbeen nearly 5 months now since I've gone and I have noticed a difference in my mobility andstrength. Now I try to go as much as I can during the week to gain even more out of the program, which not only builds strength and endurance but also more relationships within the community. The one thing about all the people that attend Deviate is the encouragement everyone gives each other during each session. There is a great atmosphere. </p>
             				<p>For each class throughout the day, there are different coaches that have knowledge and insight of how I should workout whether with weights or just cardio workouts. One of the benefits that I've noticed is the program does not focus only on one muscle but every muscle group in the body.</p>
             				<i class="fa fa-quote-right fa-pull-right" aria-hidden="true"></i>
             
-            				<p>&#8212; Matthew</p>
+            				<p class="fa-pull-right">&#8212; Matthew</p>
             			  </div>
             			</div>
             			<div class="item">
             			  <div class="carousel-caption">
-            				<i class="fa fa-quote-left left-quote" aria-hidden="true"></i>
+            				<i class="fa fa-quote-left fa-pull-left"" aria-hidden="true"></i>
             				<p>Why do I love DV8, you ask? That answer is twofold. First, only because I have to start with one, is the workouts aka WOD’s. Our WOD’s are programmed by a well-known and highly respected coach in the CrossFit world. This guarantees a good workout that is well thought out and produces great results. Each WOD proves to be challenging yet rewarding.</p>
-            				<p>Why do I love DV8, you ask? That answer is twofold. First, only because I have to start with one, is the workouts aka WOD’s. Our WOD’s are programmed by a well-known and highly respected coach in the CrossFit world. This guarantees a good workout that is well thought out and produces great results. Each WOD proves to be challenging yet rewarding.</p>
-            				<p>It is DV8’s very special community, and now my FitFam, that helped me get my first kipping pull-up, my first chest-to-bar pull-up, my first rope climb, and many weight lifting PR’s along the way. I could not have done it without them. I am 43 years old but when I am at DV8 age is irrelevant. It doesn’t define what I can do when I am in that cinderblock building. It is the coaching, my FitFam, and my hard work and dedication that define what I can do.</p>
+            				<p>Our coaching staff is amazing and well trained. They work with each athlete (yes everyone is an athlete at DV8) to help them customize the WOD to their ability, making sure everyone gets a workout that challenges them at their level. There are definitely days I come into DV8 and I am just not feeling “it”, but I can always count on the coach and/or the community to motivate me, encourage me, and congratulate me before, during, and after a WOD. That brings me to the second part of my answer, The
+Community, aka my FitFam. The workouts are great and all, but I have to say it’s probably more the community that keeps bringing me back.</p>
+            				<p>I got into CrossFit over 3 years ago at DV8. I wanted to flip tires, climb a rope, jump on a box, and most importantly, drop heavy weights. There is just something awesome about doing a lift and then throwing down that barbell when you’re finished. I wasn’t “looking” for friends, or another family, but hell if I didn’t gain the best FitFam a girl could ask for. This was so evident in the Crossfit Open workout 17.4, as the community came out to support all the athletes participating that night. The music was loud, but all I could hear during my 17.4 workout was my FitFam yelling and cheering me on.</p>
             				<i class="fa fa-quote-right fa-pull-right" aria-hidden="true"></i>
             
-            				<p>&#8212; Heather</p>
+            				<p class="fa-pull-right">&#8212; Heather</p>
             			  </div>
             			</div>
             		</div>

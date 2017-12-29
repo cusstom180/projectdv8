@@ -36,6 +36,17 @@
 		}
 		
 	}
+	
+	ol {
+		
+		&.carousel-indicators {
+			
+			@media screen and (max-width: $break-pt) {
+			display: none;
+			}
+		}
+		
+	}
 }	
 	
 #testy-div {
