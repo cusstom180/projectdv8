@@ -69,7 +69,18 @@ class Home_m extends MY_Model {
     
     public function insert($array) {
         
-        $this->db->insert('leads', $array);
+        //$this->db->insert('leads', $array);
+        
+        if ($this->db->insert('leads', $array)) {
+            $mess = "Thanks for joining the DV8 newsletter list";
+            echo json_encode($mess);
+        }
+        else {
+            $mess = "Some Problem occur. Please send an email to ". mailto('crossfitdv8@gmail.com');
+            echo json_encode($mess);
+        }
+        return $mess;
+        
     }
     
 }

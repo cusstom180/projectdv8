@@ -6,7 +6,7 @@
 			</h3>
 		</div>
 	</div>
-	<div class="row">
+	<div class="row mar-bot-50">
 		<?php /* echo form_open('');
 		      echo validation_errors();
 		      echo form_label('First Name', 'first_name');
@@ -17,32 +17,63 @@
 		      echo form_input('email');
 		      echo form_submit('leadsubmit', 'Sign me up!', 'class="btn btn-default" data-toggle="modal" data-target="#myModal"');
 		      echo form_close(); */
-		?>	
-			<form method="post" id="leadsubmit">
-     			<label for="first_name">First Name</label> 
-     			<input id="first_name" type="text" name="first_name"> 
-    	 			<label for="last_name">Last Name</label> 
-    	 			<input id="last_name"  type="text" name="Last_name"> 
+		?>
+		</div?>	
+		<div class="col-md-12 text-center leads-form">
+			<?php echo heading('There’s always something going on at DV8. Sign-up and stay up-to-date with our events & happenings', 2, 'class="mar-bot-50"')?>
+			<form method="post" id="">
+				<?php echo validation_errors();?>
+				<div class=""></div>
+				<?php echo form_label('First Name', 'first_name');
+		          echo form_input('first_name');
+		          echo form_label('Last Name', 'last_name');
+		          echo form_input('last_name');
+		          echo form_label('Email', 'email');
+		          echo form_input('email'); ?>
+		          <button onclick="addlead()" type="button">Sign Me Up!</button> 
+		          
+				
+    	 		<!-- 	<label for="last_name">Last Name</label> 
+    	 			<input id="last_name" type="text" name="Last_name"> 
     	 			<label for="email">Email</label> 
-    	 			<input type="text" name="email"> 
-    	  			<button onclick="addlead()" type="button">Click Me!</button>  
+    	 			<input id="email" type="text" name="email">  -->
+    	  			<button onclick="addlead()" type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Sign Me Up!</button>  
 			</form>
-	</div>
+			<p id="message"></p>
+		</div>
 	
 	<script type="text/javascript">
 		function addlead() {
-			
-			var param = $("#leadsubmit").serialize();
-			$.post('<?php echo base_url('index/inset'); ?>', param,
-					function(data) 
-					{
-					$('#loading_pic').hide();
-					 if(data == "Success")
-					 {
-					  alert("poop");
-					 }
-					});
-					);
+
+			//collect variables
+			var fname = $("#first_name").val();
+			var lname = $("#last_name").val();
+			var mail = $("#email").val();
+
+			//ajax request
+			$.ajax({
+				type: "POST",
+				url: "<?php echo base_url('index/insert');?>",
+				data: {first_name:fname,
+						last_name:lname,
+						email:mail},
+				datatype: "JSON",
+				success: function(data) {
+
+					var response = JSON.parse(data);
+					console.log(response);
+		            $("#message").html(response);
+		            $("#message").addClass("alert alert-success");
+		            },
+		            error: function(err) {
+		            alert(err);
+		            }
+				});
+
+			//$("#first_name").value = "";
+			if (data) {
+				$("#first_name").value = "";
+			}		
 			
 		}
 	</script>
@@ -52,14 +83,13 @@
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                <h4 class="modal-title text-capitalize" id="myModalLabel">dv8 newsletter</h4>
               </div>
               <div class="modal-body">
-                ...
+                <p>Thank you for joining our newsletter. </p>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
               </div>
             </div>
           </div>

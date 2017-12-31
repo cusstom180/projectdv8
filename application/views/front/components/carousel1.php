@@ -8,7 +8,7 @@
     <div class="item active"><img src="<?php echo base_url('public_html/images/CrossFit_DV8_snatch_girl.jpg');?>" alt="First slide image" class="center-block img-responsive">
       <div class="carousel-caption">
         <h2 data-animation="animated fadeInDown" >CrossFit DV8 is a private gym located in Downtown Rochester with unique workouts for every age and fitness level.</h2>
-        <?php echo anchor('index/wodify?id=9', '<h1 data-animation="animated fadeInDown" class="text-capitalize psuedo-btn">start your free trial</h1>')?>
+        <?php echo anchor('index/wodify?id=9', '<h1 data-animation="animated fadeInDown" class="text-capitalize psuedo-btn">sign up for your free trial</h1>')?>
       </div>
     </div>
     <div class="item"><img src="<?php echo base_url('public_html/images/DV8_view_of_open_gym.jpg'); ?>" alt="Second slide image" class="center-block img-responsive">

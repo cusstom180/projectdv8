@@ -5535,6 +5535,12 @@ body {
       .jumbotron p a {
         font-size: .9em; } }
 
+.leads-form form input {
+  margin: 0 10px;
+  width: 15%; }
+.leads-form button {
+  width: 10%; }
+
 /* index threecolumn */
 #left-index {
   height: 350px;

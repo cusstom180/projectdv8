@@ -5,6 +5,7 @@ class Index extends MY_Controller {
         
         parent::__construct();
         $this->load->model('home_m');
+        $this->load->helper('security');
         $this->data['img']['row'] = $this->home_m->likeString('logo', 'img');
         
     }
@@ -167,13 +168,23 @@ class Index extends MY_Controller {
     
     public function insert() {
         
-        $data = array(
-            'first_name' => $this->input->post('first_name'),
-            'last_name' => $this->input->post('last_name'),
-            'email' => $this->input->post('email'),
-        );
-        $this->home_m->insert($data);
+        $rules = $this->home_m->rules_leads;
+        $this->form_validation->set_rules($rules);
         
+        if ($this->form_validation->run() == true) {
+        
+            $data = array(
+                'first_name' => $this->input->post('first_name'),
+                'last_name' => $this->input->post('last_name'),
+                'email' => $this->input->post('email'),
+            );
+            $data = $this->security->xss_clean($data);
+            
+            //$this->home_m->insert($data);
+            $this->home_m->insert($data);
+            
+        }
+     
     }
     
 }

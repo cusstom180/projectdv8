@@ -55,9 +55,7 @@ $(document).ready(function(){
 	  $(".dropdown-toggle").click(); 
 	});
 	
-	$("#leadsubmit").click(function(){
-		//alert('click it');
-	});
+	$("")
 	
 	
 	
