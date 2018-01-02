@@ -21,18 +21,20 @@ class Index extends MY_Controller {
         $rules = $this->home_m->rules_leads;
         $this->form_validation->set_rules($rules);
         
-        /* if ($this->form_validation->run() == true)
-        {
-            $lead = $this->home_m->arrayFromPost(array('first_name', 'last_name', 'email'));
+       /*  if ($this->form_validation->run() == true) {
             
-            if( $this->home_m->insert($lead)) {
-                
-                echo 'lead is created';
-            }
+            $data = array(
+                'first_name' => $this->input->post('first_name'),
+                'last_name' => $this->input->post('last_name'),
+                'email' => $this->input->post('email'),
+            );
+            $data = $this->security->xss_clean($data);
             
-            
+            $this->insert($data);
             
         } */
+        
+        
         
         //load the page view
         $this->data['subview'] = 'front/Index';
@@ -168,7 +170,7 @@ class Index extends MY_Controller {
     
     public function insert() {
         
-        $rules = $this->home_m->rules_leads;
+        /* $rules = $this->home_m->rules_leads;
         $this->form_validation->set_rules($rules);
         
         if ($this->form_validation->run() == true) {
@@ -183,8 +185,10 @@ class Index extends MY_Controller {
             //$this->home_m->insert($data);
             $this->home_m->insert($data);
             
-        }
+        } */
      
+        $this->home_m->insert($data);
+        
     }
     
 }

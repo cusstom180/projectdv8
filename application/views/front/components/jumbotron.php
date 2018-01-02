@@ -23,21 +23,19 @@
 			<?php echo heading('There’s always something going on at DV8. Sign-up and stay up-to-date with our events & happenings', 2, 'class="mar-bot-50"')?>
 			<form method="post" id="">
 				<?php echo validation_errors();?>
-				<div class=""></div>
+				<div id="errors"></div>
 				<?php echo form_label('First Name', 'first_name');
-		          echo form_input('first_name');
+		          echo form_input('first_name', '', 'required');
 		          echo form_label('Last Name', 'last_name');
 		          echo form_input('last_name');
 		          echo form_label('Email', 'email');
 		          echo form_input('email'); ?>
-		          <button onclick="addlead()" type="button">Sign Me Up!</button> 
-		          
 				
     	 		<!-- 	<label for="last_name">Last Name</label> 
     	 			<input id="last_name" type="text" name="Last_name"> 
     	 			<label for="email">Email</label> 
     	 			<input id="email" type="text" name="email">  -->
-    	  			<button onclick="addlead()" type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Sign Me Up!</button>  
+    	  			<button onclick="addlead()" type="button" class="btn btn-default" data-toggle="modal" data-target="myModal">Sign Me Up!</button>  
 			</form>
 			<p id="message"></p>
 		</div>
@@ -45,11 +43,22 @@
 	<script type="text/javascript">
 		function addlead() {
 
+			var error;
 			//collect variables
-			var fname = $("#first_name").val();
+			var fname = $("input[name='first_name']").val();
 			var lname = $("#last_name").val();
 			var mail = $("#email").val();
 
+			console.log(fname);
+			 if (!fname.checkValidity()) {
+				alert("alert");
+				error += "Please enter a first name";
+				$("#errors").append("hi");
+			} else {
+				fname = $("input[name='first_name']").val();
+				} 
+
+			
 			//ajax request
 			$.ajax({
 				type: "POST",
@@ -70,10 +79,6 @@
 		            }
 				});
 
-			//$("#first_name").value = "";
-			if (data) {
-				$("#first_name").value = "";
-			}		
 			
 		}
 	</script>
