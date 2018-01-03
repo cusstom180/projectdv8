@@ -1,6 +1,7 @@
 .DS_Store
 .sass-cache/*
 application/cache/*
+public_html/bootstrap/.sass-cache/*
 !application/cache/index.html
 
 application/logs/*

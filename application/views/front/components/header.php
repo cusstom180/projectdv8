@@ -12,6 +12,7 @@
 <?php foreach ($meta as $value) { ?>
 <meta name="<?php echo $value['name']; ?>" content="<?php echo $value['content'];?>" >
 <?php } ?>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-75136848-1"></script>
 <script>
@@ -35,4 +36,5 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
 </head>

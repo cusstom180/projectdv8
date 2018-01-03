@@ -18,10 +18,10 @@ class Index extends MY_Controller {
         $this->data['meta'] = $this->home_m->getByString('metadata', 'slug', $this->data['slug']);
         
         //form set up
-        $rules = $this->home_m->rules_leads;
+        /*$rules = $this->home_m->rules_leads;
         $this->form_validation->set_rules($rules);
         
-       /*  if ($this->form_validation->run() == true) {
+         if ($this->form_validation->run() == true) {
             
             $data = array(
                 'first_name' => $this->input->post('first_name'),
@@ -170,24 +170,28 @@ class Index extends MY_Controller {
     
     public function insert() {
         
-        /* $rules = $this->home_m->rules_leads;
+        $rules = $this->home_m->rules_leads;
         $this->form_validation->set_rules($rules);
         
         if ($this->form_validation->run() == true) {
-        
+            
+            echo ('validate worked');
+        /* 
             $data = array(
                 'first_name' => $this->input->post('first_name'),
                 'last_name' => $this->input->post('last_name'),
                 'email' => $this->input->post('email'),
             );
-            $data = $this->security->xss_clean($data);
+            $data = $this->security->xss_clean($data); */
             
             //$this->home_m->insert($data);
             $this->home_m->insert($data);
             
-        } */
+        } else {
+            echo('not worked');
+        }
      
-        $this->home_m->insert($data);
+        //$this->home_m->insert($data);
         
     }
     

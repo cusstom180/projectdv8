@@ -18,69 +18,68 @@
 		      echo form_submit('leadsubmit', 'Sign me up!', 'class="btn btn-default" data-toggle="modal" data-target="#myModal"');
 		      echo form_close(); */
 		?>
-		</div?>	
+		</div>	
 		<div class="col-md-12 text-center leads-form">
 			<?php echo heading('There’s always something going on at DV8. Sign-up and stay up-to-date with our events & happenings', 2, 'class="mar-bot-50"')?>
-			<form method="post" id="">
 				<?php echo validation_errors();?>
 				<div id="errors"></div>
-				<?php echo form_label('First Name', 'first_name');
-		          echo form_input('first_name', '', 'required');
-		          echo form_label('Last Name', 'last_name');
-		          echo form_input('last_name');
-		          echo form_label('Email', 'email');
-		          echo form_input('email'); ?>
+				<?php echo form_open('', array('class' => 'jsform'));?>
+				<?php echo form_label('First Name', 'first_name');?>
+				<?php echo form_input('first_name', '', 'id="first_name" required');?>
+				<?php echo form_label('Last Name', 'last_name');?>
+				<?php echo form_input('last_name', '', 'id="last_name"');?>
+				<?php echo form_label('Email', 'email');?>
+				<?php echo form_input('email', '', 'id="email"'); ?>
+				<?php echo form_submit('submit', 'Sign Me Up!', 'class="btn btn-default" data-toggle="modal" data-target="myModal"');?>
+				<?php echo form_close();?>
 				
     	 		<!-- 	<label for="last_name">Last Name</label> 
     	 			<input id="last_name" type="text" name="Last_name"> 
     	 			<label for="email">Email</label> 
-    	 			<input id="email" type="text" name="email">  -->
-    	  			<button onclick="addlead()" type="button" class="btn btn-default" data-toggle="modal" data-target="myModal">Sign Me Up!</button>  
-			</form>
+    	 			<input id="email" type="text" name="email">  
+    	 			<button onclick="addlead()" type="button" class="btn btn-default" data-toggle="modal" data-target="myModal">Sign Me Up!</button>  -->
+    	  			
 			<p id="message"></p>
 		</div>
 	
 	<script type="text/javascript">
-		function addlead() {
 
-			var error;
-			//collect variables
-			var fname = $("input[name='first_name']").val();
-			var lname = $("#last_name").val();
-			var mail = $("#email").val();
+	$("document").ready(function(){
+		$("form.jsform").on("submit", function(form) {
+			form.preventDefault();
 
-			console.log(fname);
-			 if (!fname.checkValidity()) {
-				alert("alert");
-				error += "Please enter a first name";
-				$("#errors").append("hi");
-			} else {
-				fname = $("input[name='first_name']").val();
-				} 
-
-			
-			//ajax request
 			$.ajax({
-				type: "POST",
-				url: "<?php echo base_url('index/insert');?>",
-				data: {first_name:fname,
-						last_name:lname,
-						email:mail},
-				datatype: "JSON",
-				success: function(data) {
-
-					var response = JSON.parse(data);
-					console.log(response);
-		            $("#message").html(response);
-		            $("#message").addClass("alert alert-success");
-		            },
-		            error: function(err) {
-		            alert(err);
-		            }
-				});
-
+			    type: "POST",
+			    url: "<?php echo base_url('index/insert');?>",
+			    data: {fname: first_name,
+			    			lname: last_name,
+			    			email: email},
+			    datatype: "JSON",
+			    success: function(data) {
+			        
+			        var response = JSON.parse(data);
+			        console.log(response);
+			        //$("#message").html(response);
+			        //$("#message").addClass("alert alert-success");
+			    },
+			    error: function(err) {
+			        alert(err);
+			    }
+			});
 			
-		}
+		});
+	});
+	
+			/* $(document).ready(function(){
+			        $('.jsform').on('submit', function(form){
+			            form.preventDefault();
+			            $.post('insert', $('.jsform').serialize(), function(data){
+			                $('div.jsError').html(data);
+			            });
+			        });
+			    });
+			 */
+		
 	</script>
 	<!-- Modal -->
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
