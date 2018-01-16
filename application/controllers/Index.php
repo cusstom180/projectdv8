@@ -169,29 +169,37 @@ class Index extends MY_Controller {
     }
     
     public function insert() {
+        //$this->data['form'] = false;
         
-        $rules = $this->home_m->rules_leads;
-        $this->form_validation->set_rules($rules);
-        
-        if ($this->form_validation->run() == true) {
+        if ($this->input->post('check', true)) {
+            $fname = $this->input->post('fname', true);
+            $lname = $this->input->post('lname', true);
+            $email = $this->input->post('email', true);
             
-            echo ('validate worked');
-        /* 
-            $data = array(
-                'first_name' => $this->input->post('first_name'),
-                'last_name' => $this->input->post('last_name'),
-                'email' => $this->input->post('email'),
-            );
-            $data = $this->security->xss_clean($data); */
+            $errorEmpty = false;
+            $errorEmail = false;
             
-            //$this->home_m->insert($data);
-            $this->home_m->insert($data);
-            
-        } else {
-            echo('not worked');
+            if (empty($fname) || empty($lname) || empty($email)) {
+                $this->data['form'] =  '<span class="form-error" role="alert">Please fill out all fields</span>';
+                //$errorEmpty = true;
+            }
+            elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                $this->data['form'] =  "<span class='alert alert-danger' role='alert'>Please enter in a valid e-mail!</span>";
+                //$errorEmail = true;
+            }
+            else {
+                $success = $this->home_m->insert($fname, $lname, $email);
+                $this->data['form'] = 'Thank you for joining the DV8 newsletter list';
+                //$this->data['form'] = true;
+            }
         }
-     
-        //$this->home_m->insert($data);
+        else {
+            $this->data['form'] = 'Something went wrong';
+        }
+        //echo $this->data['form'];
+        //load the page view
+        $this->load->view('front/insert', $this->data);
+        
         
     }
     

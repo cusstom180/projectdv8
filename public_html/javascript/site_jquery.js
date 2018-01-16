@@ -1,13 +1,6 @@
 
 $(document).ready(function(){
 	
-	/*var windowWidth = $(window).width();
-	
-	if(windowWidth > 768) {
-		
-		$(".btn").mouseover(function () {
-		$(this).children().addClass("hello");
-	});*/
 	
 	
 	$(".carousel").on("slid.bs.carousel", function () {
@@ -54,9 +47,6 @@ $(document).ready(function(){
 	$(".dropdown").hover(function(){ 
 	  $(".dropdown-toggle").click(); 
 	});
-	
-	
-	
 	
 	
 });

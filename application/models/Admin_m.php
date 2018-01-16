@@ -60,10 +60,9 @@ class Admin_M extends MY_Model {
     
     public function loginProcess($data) {
         
-        $data['password'] = password_hash($data['password'], PASSWORD_BCRYPT);
+        $data['password'] = md5($data['password']);
         //var_dump($data);
         //$this->db->from($this->_tableName);
-        $this->db->select('*');
         $this->db->where($data);
         $query = $this->db->get($this->_tableName);
         $result = $query->result_array();
@@ -93,4 +92,20 @@ class Admin_M extends MY_Model {
         
         $this->session->sess_destroy();
     }
+    
+    
+    public function checkPassword($email, $password) {
+        
+        
+        //get password based on email
+        
+        $passkey = $this->getRow('user', 'email', $email, null);
+        //var_dump($passkey);
+        //return $passkey;
+        
+        //compare passwords
+        //return $check;
+        
+    }
+    
 }

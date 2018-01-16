@@ -10,6 +10,9 @@ class Admin extends MY_Controller {
     
     public function index() {
         
+        // check for session data if not set redirect to login else show dashboard 
+        
+        
         $rules = $this->admin_m->rules_login;
         $this->form_validation->set_rules($rules);
        
@@ -31,7 +34,11 @@ class Admin extends MY_Controller {
     
     public function login() {
         
+        //show login form if success set sessiondata and redirect to dashboard else redirect to login again with errors
+        
+        
         $data = $this->admin_m->arrayFromPost(array('email', 'password'));
+        
         //var_dump($data);
         $result = $this->admin_m->loginProcess($data);
         print_r($result);
@@ -57,6 +64,7 @@ class Admin extends MY_Controller {
     
     public function insert() {
         
+        //add user to data NEED to set a special user role to access this page
         echo 'insert page';
         
         $rules = $this->admin_m->rules_insert;
@@ -67,7 +75,7 @@ class Admin extends MY_Controller {
             $data = $this->admin_m->arrayFromPost(array('name', 'email', 'password'));
             
             if (!empty($data['password'])) {
-                $data['password'] = password_hash($data['password'], PASSWORD_BCRYPT);
+                $data['password'] = md5($data['password']);
                 $this->admin_m->insert($data);
                 $this->data['subview'] = 'admin/success';
             }
@@ -80,6 +88,8 @@ class Admin extends MY_Controller {
     }
     
     public function account(){
+        
+        // might need to delete this function
         
         if($this->session->loggedIn === true ) {
             
@@ -107,4 +117,21 @@ class Admin extends MY_Controller {
         redirect('admin');
     }
     
+    public function loginUser() {
+        
+        $input = array();
+        
+        //get db row where = email
+        
+        $input['email'] = $this->input->post('email');
+        
+        $input['password'] = md5($this->input->post('password'));
+        
+        $passkey = $this->admin_m->checkPassword($input['email'], $input['password']);
+        
+        var_dump($passkey) ;
+        
+        //var_dump($passkey);
+        
+    }
 }

@@ -37,7 +37,7 @@ class MY_Model extends CI_Model {
             $this->db->select($select);
             $this->db->from($table);
             $query = $this->db->where($where, $str);
-            //echo $this->db->last_query();
+            echo $this->db->last_query();
             
         } 
         
@@ -55,8 +55,8 @@ class MY_Model extends CI_Model {
         }
         
         $query = $this->db->from($table);
-        $query = $query = $this->db->where($where, $str);
-        return $result = $this->db->row();
+        $query = $this->db->where($where, $str);
+        return $result = $query->get()->row_array();
     }
     
 }

@@ -307,3 +307,12 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond $1 !^(index\.php|asset|robots\.txt)
 RewriteRule ^(.*)$ index.php/$1 [L]
+
+
+$('.modal-body').load(
+					'<?php echo site_url('index.php/index/insert');?>',
+					{fname: fname,
+					lname: lname,
+					email: email,
+					check: check,}
+					);
